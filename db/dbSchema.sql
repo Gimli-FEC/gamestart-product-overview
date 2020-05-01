@@ -3,14 +3,14 @@ CREATE DATABASE fec_Module_1;
 USE fec_Module_1;
 
 
-CREATE TABLE product (
+CREATE TABLE products (
   id INT AUTO_INCREMENT,
   title VARCHAR(50) NOT NULL,
   publisher VARCHAR(50) NOT NULL,
   content_rating INT NOT NULL REFERENCES esrbRatings(id),
-  userRating DECIMAL(1,1),
-  priceNew DECIMAL(3,2),
-  priceUsed DECIMAL(3,2),
+  userRating DECIMAL(2,1),
+  priceNew DECIMAL(5,2),
+  priceUsed DECIMAL(5,2),
   currentStockNew INT NOT NULL,
   currentStockUsed INT NOT NULL,
   PRIMARY KEY (id)
