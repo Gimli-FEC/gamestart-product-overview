@@ -19,3 +19,11 @@ connection.connect((err) => {
 });
 
 
+//will return all info whichever product id is entered
+let getProductById = (id, cb) => {
+ //TODO
+
+
+};
+
+module.exports.findProduct = getProductById;
