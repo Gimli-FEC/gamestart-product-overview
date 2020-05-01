@@ -9,7 +9,8 @@
   },
   "scripts": {
     "server-dev": "nodemon server",
-    "react-dev": "webpack -d --watch"
+    "react-dev": "webpack -d --watch",
+    "seed": "node db/dbSeed.js"
   },
   "dependencies": {
     "express": "^4.17.1",
