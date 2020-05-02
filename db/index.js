@@ -20,10 +20,36 @@ connection.connect((err) => {
 
 
 //will return all info whichever product id is entered
-let getProductById = (id, cb) => {
- //TODO
-
-
+let getProductInfoById = (id, cb) => {
+  connection.query('SELECT * from products WHERE products.id=?', id, (err, results, fields) => {
+    if (err) {
+      console.log(err);
+      return;
+    }
+    cb(null, results);
+  });
 };
 
-module.exports.findProduct = getProductById;
+let getImagesById = (id, cb) => {
+  connection.query('SELECT url from images WHERE product_id=?', id, (err, results, fields) => {
+    if (err) {
+      console.log(err);
+      return;
+    }
+    cb(null, results);
+  });
+};
+
+let getEsrb = (id, cb) => {
+  connection.query('SELECT name, url from esrbRatings INNER JOIN products WHERE esrbRatings.id=products.content_rating AND products.id=?', id, (err, results, fields) => {
+    if (err) {
+      console.log(err);
+      return;
+    }
+    cb(null, results);
+  });
+};
+
+module.exports.findProduct = getProductInfoById;
+module.exports.getImages = getImagesById;
+module.exports.getEsrb = getEsrb;
