@@ -7,12 +7,17 @@ class App extends React.Component {
     this.state = {};
   }
 
+  componentDidMount() {
+    // ajax request
+    // import jquery
+  }
+
   render() {
     return (
       <div>React is working</div>
-    )
+    );
   }
 }
 
-
+// eslint-disable-next-line no-undef
 ReactDOM.render(<App />, document.getElementById('app'));
