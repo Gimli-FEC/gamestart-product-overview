@@ -113,7 +113,7 @@ const setUpESRBRatingsTable = () => {
   const urls = [];
   const baseUrl = 'https://hrr45-fec.s3.us-east-2.amazonaws.com/photos/esrb/';
   for (let i = 1; i <= 7; i += 1) {
-    urls.push(`${baseUrl + i}.jpeg`);
+    urls.push(`${baseUrl + i}.png`);
   }
 
   const ratingNames = ['early-childhood', 'everyone', 'everyone10+', 'teen', 'mature', 'adults-only', 'rating-pending'];
