@@ -1,6 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
+import 'normalize.css';
+import styled from 'styled-components';
+
+const Title = styled.h1`
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: center;
+`;
+
+const EsrbPic = styled.img`
+  height: 53px;
+  width: 38px;
+`;
 
 class App extends React.Component {
   constructor(props) {
@@ -67,12 +81,12 @@ class App extends React.Component {
 
     return (
       <div>
-        <h1>
-          You are looking at product
+        <Title>
+          Images from db for product:
           {id}
-        </h1>
+        </Title>
         <p />
-        <img src={esrbImage} alt={esrbCategory} />
+        <EsrbPic src={esrbImage} alt={esrbCategory} />
         {images.map((url, index) => <img src={url} alt={index + 1} />)}
       </div>
     );
