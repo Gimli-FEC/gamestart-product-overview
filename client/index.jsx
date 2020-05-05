@@ -87,7 +87,7 @@ class App extends React.Component {
         </Title>
         <p />
         <EsrbPic src={esrbImage} alt={esrbCategory} />
-        {images.map((url, index) => <img src={url} alt={index + 1} />)}
+        {images.map((pic, index) => <img src={pic.url} alt={index + 1} key={pic.id} />)}
       </div>
     );
   }
