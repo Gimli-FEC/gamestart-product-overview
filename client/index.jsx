@@ -39,7 +39,7 @@ class App extends React.Component {
     // eslint-disable-next-line no-undef
     const params = (new URL(window.location)).searchParams;
     // eslint-disable-next-line radix
-    const id = parseInt(params.get('id'));
+    const id = parseInt(params.get('id'), 10);
 
     $.get(`/${id}`)
       .done((data) => {
