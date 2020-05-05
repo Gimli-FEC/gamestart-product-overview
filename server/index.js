@@ -27,7 +27,7 @@ app.get('/:id', ({ params: { id } }, res) => {
         console.log(err2);
         return;
       }
-      results2.forEach((item) => data.images.push(item.url));
+      results2.forEach((item) => data.images.push(item));
       db.getEsrb(id, (err3, results3) => {
         if (err3) {
           console.log(err3);

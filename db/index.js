@@ -27,7 +27,7 @@ const getProductInfoById = (id, cb) => {
 };
 // returns all images for a given product id
 const getImagesById = (id, cb) => {
-  connection.query('SELECT url from images WHERE product_id=?', id, (err, results) => {
+  connection.query('SELECT id, url from images WHERE product_id=?', id, (err, results) => {
     if (err) {
       console.log(err);
       return;
