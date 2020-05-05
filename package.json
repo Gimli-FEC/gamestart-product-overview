@@ -10,7 +10,8 @@
   "scripts": {
     "server-dev": "nodemon server",
     "react-dev": "webpack -d --watch",
-    "seed": "node db/dbSeed.js"
+    "seed": "node db/dbSeed.js",
+    "test": "jest"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -28,19 +29,22 @@
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
     "@babel/preset-react": "^7.9.4",
+    "@testing-library/react": "^10.0.4",
     "babel": "^6.23.0",
+    "babel-jest": "^26.0.0",
     "babel-loader": "^8.1.0",
     "babel-plugin-styled-components": "^1.10.7",
     "css-loader": "^3.5.3",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.0",
     "faker": "^4.1.0",
+    "jest": "^26.0.0",
     "nodemon": "^2.0.3",
+    "react-test-renderer": "^16.13.1",
     "style-loader": "^1.2.1"
   }
 }
