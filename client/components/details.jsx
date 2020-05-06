@@ -19,7 +19,7 @@ const Publisher = styled.span`
 const EsrbPic = styled.img`
   height: 53px;
   width: 38px;
-  vertical-align: baseline;
+  margin-top: 15px;
 `;
 
 const Grid = styled.div`
@@ -28,7 +28,6 @@ const Grid = styled.div`
 
 const Row = styled.div`
   display: flex;
-  vertical-align: top;
 `;
 
 const Col = styled.div`

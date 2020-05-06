@@ -7,7 +7,8 @@ import Details from './components/details.jsx';
 import ImageList from './components/imageList.jsx';
 
 const Grid = styled.div`
-
+  width: 60%;
+  margin: auto;
 `;
 
 const Row = styled.div`
@@ -15,7 +16,8 @@ const Row = styled.div`
 `;
 
 const Col = styled.div`
- size: ${(props) => props.size};
+  flex: ${(props) => props.size};
+  margin-right: 25px;
 `;
 
 
