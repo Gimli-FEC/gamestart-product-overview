@@ -3,18 +3,21 @@ import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import 'normalize.css';
 import styled from 'styled-components';
+import Details from './components/details.jsx';
+import ImageList from './components/imageList.jsx';
 
-const Title = styled.h1`
-  font-family: sans-serif;
-  font-size: 1.5rem;
-  font-weight: 900;
-  text-align: center;
+const Grid = styled.div`
+
 `;
 
-const EsrbPic = styled.img`
-  height: 53px;
-  width: 38px;
+const Row = styled.div`
+  display: flex;
 `;
+
+const Col = styled.div`
+ size: ${(props) => props.size};
+`;
+
 
 class App extends React.Component {
   constructor(props) {
@@ -77,18 +80,19 @@ class App extends React.Component {
       esrbCategory,
       esrbImage,
     } = this.state;
-
+    console.log(images);
 
     return (
-      <div>
-        <Title>
-          Images from db for product:
-          {id}
-        </Title>
-        <p />
-        <EsrbPic src={esrbImage} alt={esrbCategory} />
-        {images.map((pic, index) => <img src={pic.url} alt={index + 1} key={pic.id} />)}
-      </div>
+      <Grid>
+        <Row>
+          <Col size={1}>
+            <ImageList images={images} />
+          </Col>
+          <Col size={1}>
+            <Details title={title} publisher={publisher} EsrbSrc={esrbImage} EsrbCat={esrbCategory} />
+          </Col>
+        </Row>
+      </Grid>
     );
   }
 }
