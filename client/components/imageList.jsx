@@ -41,15 +41,7 @@ class ImageList extends React.Component {
     this.changePic = this.changePic.bind(this);
   }
 
-  // componentDidMount() {
-  //   const { images } = this.props;
-  //   this.setState({active: images[0].url});
-  // }
-
   changePic(e) {
-    // set main state to index position of id
-    //e.preventDefault();
-    console.log(e);
     this.setState({ active: e });
   }
 
