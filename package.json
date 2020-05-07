@@ -11,7 +11,8 @@
     "server-dev": "nodemon server",
     "react-dev": "webpack -d --watch",
     "seed": "node db/dbSeed.js",
-    "test": "jest"
+    "test": "jest",
+    "test-watch": "jest --watch"
   },
   "jest": {
     "transform": {
@@ -35,6 +36,7 @@
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
     "@babel/preset-react": "^7.9.4",
+    "@testing-library/jest-dom": "^5.5.0",
     "@testing-library/react": "^10.0.4",
     "babel": "^6.23.0",
     "babel-jest": "^26.0.0",
@@ -51,6 +53,7 @@
     "jest": "^26.0.0",
     "nodemon": "^2.0.3",
     "react-test-renderer": "^16.13.1",
-    "style-loader": "^1.2.1"
+    "style-loader": "^1.2.1",
+    "supertest": "^4.0.2"
   }
 }
