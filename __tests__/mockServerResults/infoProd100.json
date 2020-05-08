@@ -1,0 +1,17 @@
+{
+  "info": {
+    "id": 100,
+    "title": "Generic Fresh Towels",
+    "publisher": "Gutkowski - Ortiz",
+    "content_rating": 4,
+    "userRating": 3.7,
+    "priceNew": 89.68,
+    "priceUsed": 23.04,
+    "currentStockNew": 2,
+    "currentStockUsed": 2
+  },
+  "esrb": {
+    "name": "teen",
+    "url": "https://hrr45-fec.s3.us-east-2.amazonaws.com/photos/esrb/4.png"
+  }
+}

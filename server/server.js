@@ -13,7 +13,14 @@ app.use(express.static('public'));
 
 
 app.get('/:id', ({ params: { id } }, res) => {
-  const data = { info: {}, images: [], esrb: {} };
+
+  if (Number(id) > 100) {
+    id = '100';
+  } else if (Number(id) < 1) {
+    id = '1';
+  }
+
+  const data = { info: {}, esrb: {} };
 
   db.findProduct(id, (err1, results1) => {
     if (err1) {
@@ -21,22 +28,33 @@ app.get('/:id', ({ params: { id } }, res) => {
       return;
     }
     [data.info] = results1;
-    db.getImages(id, (err2, results2) => {
+    db.getEsrb(id, (err2, results2) => {
       if (err2) {
         console.log(err2);
         return;
       }
-      results2.forEach((item) => data.images.push(item));
-      db.getEsrb(id, (err3, results3) => {
-        if (err3) {
-          console.log(err3);
-          return;
-        }
-        [data.esrb] = results3;
-        res.send(data);
-      });
+      [data.esrb] = results2;
+      res.send(data);
     });
   });
 });
+
+app.get('/images/:id', ({ params: { id } }, res) => {
+
+  if (Number(id) > 100) {
+    id = '100';
+  } else if (Number(id) < 1) {
+    id = '1';
+  }
+
+  db.getImages(id, (err, results) => {
+    if (err) {
+      console.log(err);
+      return;
+    }
+    res.send(results);
+  });
+});
+
 
 module.exports = app;

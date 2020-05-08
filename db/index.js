@@ -49,3 +49,4 @@ const getEsrb = (id, cb) => {
 module.exports.findProduct = getProductInfoById;
 module.exports.getImages = getImagesById;
 module.exports.getEsrb = getEsrb;
+module.exports.connection = connection;

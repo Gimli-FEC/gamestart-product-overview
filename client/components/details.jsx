@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import RatingStars from './ratings.jsx';
 
 const Title = styled.h1`
   font-family: sans-serif;
@@ -23,11 +24,12 @@ const EsrbPic = styled.img`
 `;
 
 const Grid = styled.div`
-
+  margin-left: 75px;
 `;
 
 const Row = styled.div`
   display: flex;
+  margin-botton: 15px;
 `;
 
 const Col = styled.div`
@@ -52,7 +54,7 @@ const Details = ({ title, publisher, EsrbSrc, EsrbCat }) => (
     </Row>
     <Row>
       <Col size={1}>
-        Stars Here
+        <RatingStars stars={5} />
       </Col>
       <Col size={1}>
         Rating
@@ -62,6 +64,32 @@ const Details = ({ title, publisher, EsrbSrc, EsrbCat }) => (
       </Col>
       <Col size={2} />
     </Row>
+      <Row>
+        New Vs Pre-owned Selection Component
+      </Row>
+      <Row>
+        PickupComponent
+      </Row>
+      <Row>
+        ShippingComponent
+      </Row>
+      <Row>
+        <Col size={3}>
+          ProtectionPlanSelect
+        </Col>
+        <Col size={1}>
+          Plan Details (link)
+        </Col>
+      </Row>
+      <Row>
+        Add To Cart (Button) Component
+      </Row>
+      <Row>
+        IN STOCK Comonent
+      </Row>
+      <Row>
+        Add to wishlist + TradeIn Component
+      </Row>
   </Grid>
 );
 
