@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1`] = `
+<DocumentFragment>
+  <div
+    class="details__Grid-sc-2uoopj-3 eEaZsN"
+  >
+    <div
+      class="details__Row-sc-2uoopj-4 bHVeVR"
+    >
+      <div
+        class="details__Col-sc-2uoopj-5 hihrbV"
+        size="3"
+      >
+        <div
+          class="details__Row-sc-2uoopj-4 bHVeVR"
+        >
+          <h1
+            class="details__Title-sc-2uoopj-0 hLIyKG"
+          >
+            Incredible Steel Car
+          </h1>
+        </div>
+        <div
+          class="details__Row-sc-2uoopj-4 bHVeVR"
+        >
+          <span
+            class="details__Publisher-sc-2uoopj-1 dAMCfq"
+          >
+            Feest - Schiller
+          </span>
+        </div>
+      </div>
+      <div
+        class="details__Col-sc-2uoopj-5 cKwRRf"
+        size="1"
+      >
+        <img
+          alt="rating-pending"
+          class="details__EsrbPic-sc-2uoopj-2 hUcYWy"
+          src="https://hrr45-fec.s3.us-east-2.amazonaws.com/photos/esrb/7.png"
+        />
+      </div>
+    </div>
+    <div
+      class="details__Row-sc-2uoopj-4 bHVeVR"
+    >
+      <div
+        class="details__Col-sc-2uoopj-5 cKwRRf"
+        size="1"
+      >
+        ☆☆☆☆☆
+      </div>
+      <div
+        class="details__Col-sc-2uoopj-5 cKwRRf"
+        size="1"
+      >
+        Rating
+      </div>
+      <div
+        class="details__Col-sc-2uoopj-5 cKwRRf"
+        size="1"
+      >
+        NumofReviews
+      </div>
+      <div
+        class="details__Col-sc-2uoopj-5 fvMKmI"
+        size="2"
+      />
+    </div>
+    <div
+      class="details__Row-sc-2uoopj-4 bHVeVR"
+    >
+      New Vs Pre-owned Selection Component
+    </div>
+    <div
+      class="details__Row-sc-2uoopj-4 bHVeVR"
+    >
+      PickupComponent
+    </div>
+    <div
+      class="details__Row-sc-2uoopj-4 bHVeVR"
+    >
+      ShippingComponent
+    </div>
+    <div
+      class="details__Row-sc-2uoopj-4 bHVeVR"
+    >
+      <div
+        class="details__Col-sc-2uoopj-5 hihrbV"
+        size="3"
+      >
+        ProtectionPlanSelect
+      </div>
+      <div
+        class="details__Col-sc-2uoopj-5 cKwRRf"
+        size="1"
+      >
+        Plan Details (link)
+      </div>
+    </div>
+    <div
+      class="details__Row-sc-2uoopj-4 bHVeVR"
+    >
+      Add To Cart (Button) Component
+    </div>
+    <div
+      class="details__Row-sc-2uoopj-4 bHVeVR"
+    >
+      IN STOCK Comonent
+    </div>
+    <div
+      class="details__Row-sc-2uoopj-4 bHVeVR"
+    >
+      Add to wishlist + TradeIn Component
+    </div>
+  </div>
+</DocumentFragment>
+`;
