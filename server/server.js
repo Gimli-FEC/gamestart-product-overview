@@ -13,6 +13,13 @@ app.use(express.static('public'));
 
 
 app.get('/:id', ({ params: { id } }, res) => {
+
+  if (Number(id) > 100) {
+    id = '100';
+  } else if (Number(id) < 1) {
+    id = '1';
+  }
+
   const data = { info: {}, esrb: {} };
 
   db.findProduct(id, (err1, results1) => {
@@ -33,6 +40,13 @@ app.get('/:id', ({ params: { id } }, res) => {
 });
 
 app.get('/images/:id', ({ params: { id } }, res) => {
+
+  if (Number(id) > 100) {
+    id = '100';
+  } else if (Number(id) < 1) {
+    id = '1';
+  }
+
   db.getImages(id, (err, results) => {
     if (err) {
       console.log(err);
