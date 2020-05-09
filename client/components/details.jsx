@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import RatingStars from './ratings.jsx';
+import GameVersion from './newOrUsed.jsx';
 
 const Title = styled.h1`
   font-family: sans-serif;
@@ -30,6 +32,7 @@ const Grid = styled.div`
 const Row = styled.div`
   display: flex;
   margin-botton: 15px;
+  padding-bottom: 10px;
 `;
 
 const Col = styled.div`
@@ -37,7 +40,7 @@ const Col = styled.div`
   margin-bottom: 20px;
 `;
 
-const Details = ({ title, publisher, EsrbSrc, EsrbCat }) => (
+const Details = ({ title, publisher, EsrbSrc, EsrbCat, rating }) => (
   <Grid>
     <Row>
       <Col size={3}>
@@ -54,27 +57,28 @@ const Details = ({ title, publisher, EsrbSrc, EsrbCat }) => (
     </Row>
     <Row>
       <Col size={1}>
-        <RatingStars stars={5} />
+        <RatingStars rating={rating} />
       </Col>
       <Col size={1}>
-        Rating
+        {rating}
       </Col>
       <Col size={1}>
-        NumofReviews
+        NumofReviews(TBD)
       </Col>
       <Col size={2} />
     </Row>
       <Row>
-        New Vs Pre-owned Selection Component
+        <GameVersion labelName={"New"} value={"$$$$$$$$"}/>
+        <GameVersion labelName={"Used"} value={"$$$"}/>
       </Row>
       <Row>
-        PickupComponent
+        <FontAwesomeIcon icon="map-marker-alt" />Available at a store near you!
       </Row>
       <Row>
-        ShippingComponent
+        <FontAwesomeIcon icon="truck" /><span><strong> FREE NO HURRY SHIPPING $35+</strong></span>
       </Row>
       <Row>
-        <Col size={3}>
+        <Col size={1}>
           ProtectionPlanSelect
         </Col>
         <Col size={1}>
@@ -88,7 +92,12 @@ const Details = ({ title, publisher, EsrbSrc, EsrbCat }) => (
         IN STOCK Comonent
       </Row>
       <Row>
-        Add to wishlist + TradeIn Component
+        <Col size={1}>
+        <FontAwesomeIcon icon="list-ul" color="rgb(219,1,1)" /> ADD TO WISHLIST
+        </Col>
+        <Col size={1}>
+          <FontAwesomeIcon icon="retweet" color="rgb(219,1,1)" /> SEE TRADE VALUE
+        </Col>
       </Row>
   </Grid>
 );

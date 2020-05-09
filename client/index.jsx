@@ -3,8 +3,15 @@ import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import 'normalize.css';
 import styled from 'styled-components';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faListUl, faMapMarkerAlt, faChevronDown, faRetweet, faTruck } from '@fortawesome/free-solid-svg-icons';
+
 import Details from './components/details.jsx';
 import ImageSelector from './components/imgSelector.jsx';
+
+
+library.add(faListUl, faMapMarkerAlt, faChevronDown, faRetweet, faTruck);
+
 
 const Grid = styled.div`
   width: 60%;
@@ -88,7 +95,12 @@ class App extends React.Component {
             <ImageSelector />
           </Col>
           <Col size={1}>
-            <Details title={title} publisher={publisher} EsrbSrc={esrbImage} EsrbCat={esrbCategory} />
+            <Details
+              title={title}
+              publisher={publisher}
+              EsrbSrc={esrbImage}
+              EsrbCat={esrbCategory}
+              rating={userRating} />
           </Col>
         </Row>
       </Grid>
