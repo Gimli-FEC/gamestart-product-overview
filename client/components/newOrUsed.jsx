@@ -1,15 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-
-const RadioOption = styled.input`
-  opacity: 0;
-  width: 0;
-  margin: 0;
-  :checked + label {
-    box-shadow: inset 0px -3px rgb(219,1,1);;
-  }
-`;
 
 const Label = styled.label`
   display: inline-block;
@@ -21,18 +13,26 @@ const Label = styled.label`
   :hover {
     box-shadow: inset 0px -3px rgb(219,1,1);
   }
-`;
 
+  input {
+    visibility: hidden;
+    :checked + ${Label} {
+      box-shadow: inset 0px -3px rgb(219,1,1);
+    }
+  }
+`;
 
 const GameVersion = ({ labelName, value }) => {
   return (
     <Label>
+      <FontAwesomeIcon icon="map-marker-alt" />
       <strong>{labelName}</strong>
       <br />
       {value}
-      <RadioOption type="radio" value='$100m' />
+      <input type="radio" name={labelName} value={value} />
     </Label>
   );
 };
+
 
 export default GameVersion;

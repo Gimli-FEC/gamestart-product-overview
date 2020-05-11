@@ -68,8 +68,8 @@ const Details = ({ title, publisher, EsrbSrc, EsrbCat, rating }) => (
       <Col size={2} />
     </Row>
       <Row>
-        <GameVersion labelName={"New"} value={"$$$$$$$$"}/>
-        <GameVersion labelName={"Used"} value={"$$$"}/>
+        <GameVersion labelName={"New"} value={"$$$$$$$$"} />
+        <GameVersion labelName={"Used"} value={"$$$"} />
       </Row>
       <Row>
         <FontAwesomeIcon icon="map-marker-alt" />Available at a store near you!
