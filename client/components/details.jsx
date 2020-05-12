@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Ratings from './ratings.jsx';
-import GameVersion from './newOrUsed.jsx';
+import Version from './version.jsx';
 import Button from './button.jsx';
 
 const Title = styled.h1`
@@ -48,53 +48,52 @@ const StockDetails = styled.div`
 
 
 const Details = ({ title, publisher, EsrbSrc, EsrbCat, priceNew, priceUsed }) => {
-  // add state to track gameversion selection (potential refactor after proxy setup)
+
   return (
-  <Grid>
-    <Row>
-      <Col size={3}>
-        <Row>
-          <Title>{title}</Title>
-        </Row>
-        <Row>
-          <Publisher>{publisher}</Publisher>
-        </Row>
-      </Col>
-      <Col size={1}>
-        <EsrbPic src={EsrbSrc} alt={EsrbCat} />
-      </Col>
-    </Row>
-    <Row>
-      <Ratings />
-    </Row>
-    <Row>
-      <GameVersion labelName={'new'} value={priceNew} />
-      <GameVersion labelName={'pre-owned'} value={priceUsed} />
-    </Row>
-    <Row>
-      <FontAwesomeIcon icon="map-marker-alt" />
-      Available at a store near you!
-    </Row>
-    <Row>
-      <FontAwesomeIcon icon="truck" /><span><strong> FREE NO HURRY SHIPPING $35+</strong></span>
-    </Row>
-    <Row>
-      <Button text='Add to cart' />
-    </Row>
-    <Row>
-      IN STOCK Comonent
-    </Row>
-    <Row>
-      <Col size={1}>
-        <FontAwesomeIcon icon="list-ul" color="rgb(219,1,1)" />
-        ADD TO WISHLIST
-      </Col>
-      <Col size={1}>
-        <FontAwesomeIcon icon="retweet" color="rgb(219,1,1)" />
-        SEE TRADE VALUE
-      </Col>
-    </Row>
-  </Grid>
+    <Grid>
+      <Row>
+        <Col size={3}>
+          <Row>
+            <Title>{title}</Title>
+          </Row>
+          <Row>
+            <Publisher>{publisher}</Publisher>
+          </Row>
+        </Col>
+        <Col size={1}>
+          <EsrbPic src={EsrbSrc} alt={EsrbCat} />
+        </Col>
+      </Row>
+      <Row>
+        <Ratings />
+      </Row>
+      <Row>
+        <Version priceNew={priceNew} priceUsed={priceUsed} />
+      </Row>
+      <Row>
+        <FontAwesomeIcon icon="map-marker-alt" />
+        Available at a store near you!
+      </Row>
+      <Row>
+        <FontAwesomeIcon icon="truck" /><span><strong> FREE NO HURRY SHIPPING $35+</strong></span>
+      </Row>
+      <Row>
+        <Button text='Add to cart' />
+      </Row>
+      <Row>
+        IN STOCK Component Coming Soon
+      </Row>
+      <Row>
+        <Col size={1}>
+          <FontAwesomeIcon icon="list-ul" color="rgb(219,1,1)" />
+          ADD TO WISHLIST
+        </Col>
+        <Col size={1}>
+          <FontAwesomeIcon icon="retweet" color="rgb(219,1,1)" />
+          SEE TRADE VALUE
+        </Col>
+      </Row>
+    </Grid>
   );
 };
 
