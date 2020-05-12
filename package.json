@@ -15,6 +15,7 @@
     "test-watch": "jest --watch"
   },
   "jest": {
+    "clearMocks": true,
     "transform": {
       "^.+\\.jsx?$": "babel-jest"
     }

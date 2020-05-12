@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1`] = `
+<DocumentFragment>
+  <div
+    class="mainImage__MainContainer-zvt6z9-0 bDNVUL"
+    src="https://hrr45-fec.s3.us-east-2.amazonaws.com/photos/product/500.jpeg"
+    style="background-position: 0% 0%;"
+  >
+    <img
+      class="mainImage__Image-zvt6z9-1 ccjQdL"
+      src="https://hrr45-fec.s3.us-east-2.amazonaws.com/photos/product/500.jpeg"
+    />
+  </div>
+</DocumentFragment>
+`;
