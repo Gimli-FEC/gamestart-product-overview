@@ -37,7 +37,6 @@ class App extends React.Component {
       title: null,
       publisher: null,
       contentRating: null,
-      userRating: null,
       priceNew: null,
       priceUsed: null,
       currentStockNew: null,
@@ -61,7 +60,6 @@ class App extends React.Component {
           title: data.info.title,
           publisher: data.info.publisher,
           contentRating: data.info.content_rating,
-          userRating: data.info.userRating,
           priceNew: data.info.priceNew,
           priceUsed: data.info.priceUsed,
           currentStockNew: data.info.currentStockNew,
@@ -79,7 +77,6 @@ class App extends React.Component {
       title,
       publisher,
       contentRating,
-      userRating,
       priceNew,
       priceUsed,
       currentStockNew,
@@ -100,7 +97,8 @@ class App extends React.Component {
               publisher={publisher}
               EsrbSrc={esrbImage}
               EsrbCat={esrbCategory}
-              rating={userRating} />
+              priceNew={priceNew}
+              priceUsed={priceUsed} />
           </Col>
         </Row>
       </Grid>

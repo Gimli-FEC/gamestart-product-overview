@@ -2,8 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import RatingStars from './ratings.jsx';
+import Ratings from './ratings.jsx';
 import GameVersion from './newOrUsed.jsx';
+import Button from './button.jsx';
 
 const Title = styled.h1`
   font-family: sans-serif;
@@ -14,7 +15,6 @@ const Title = styled.h1`
 `;
 
 const Publisher = styled.span`
-  font-family: sans-serif;
   font-size: .5rem;
   text-align: left;
 `;
@@ -27,6 +27,8 @@ const EsrbPic = styled.img`
 
 const Grid = styled.div`
   margin-left: 75px;
+  font-family: sans-serif;
+  font-size: .75rem;
 `;
 
 const Row = styled.div`
@@ -40,7 +42,14 @@ const Col = styled.div`
   margin-bottom: 20px;
 `;
 
-const Details = ({ title, publisher, EsrbSrc, EsrbCat, rating }) => (
+const StockDetails = styled.div`
+  color: rgb(50, 157, 115);
+`;
+
+
+const Details = ({ title, publisher, EsrbSrc, EsrbCat, priceNew, priceUsed }) => {
+
+  return (
   <Grid>
     <Row>
       <Col size={3}>
@@ -56,51 +65,38 @@ const Details = ({ title, publisher, EsrbSrc, EsrbCat, rating }) => (
       </Col>
     </Row>
     <Row>
-      <Col size={1}>
-        <RatingStars rating={rating} />
-      </Col>
-      <Col size={1}>
-        {rating}
-      </Col>
-      <Col size={1}>
-        NumofReviews(TBD)
-      </Col>
-      <Col size={2} />
+      <Ratings />
     </Row>
-      <Row>
-        <GameVersion labelName={"New"} value={"$$$$$$$$"} />
-        <GameVersion labelName={"Used"} value={"$$$"} />
-      </Row>
-      <Row>
-        <FontAwesomeIcon icon="map-marker-alt" />Available at a store near you!
-      </Row>
-      <Row>
-        <FontAwesomeIcon icon="truck" /><span><strong> FREE NO HURRY SHIPPING $35+</strong></span>
-      </Row>
-      <Row>
-        <Col size={1}>
-          ProtectionPlanSelect
-        </Col>
-        <Col size={1}>
-          Plan Details (link)
-        </Col>
-      </Row>
-      <Row>
-        Add To Cart (Button) Component
-      </Row>
-      <Row>
-        IN STOCK Comonent
-      </Row>
-      <Row>
-        <Col size={1}>
-        <FontAwesomeIcon icon="list-ul" color="rgb(219,1,1)" /> ADD TO WISHLIST
-        </Col>
-        <Col size={1}>
-          <FontAwesomeIcon icon="retweet" color="rgb(219,1,1)" /> SEE TRADE VALUE
-        </Col>
-      </Row>
+    <Row>
+      <GameVersion labelName={'new'} value={priceNew} />
+      <GameVersion labelName={'pre-owned'} value={priceUsed} />
+    </Row>
+    <Row>
+      <FontAwesomeIcon icon="map-marker-alt" />
+      Available at a store near you!
+    </Row>
+    <Row>
+      <FontAwesomeIcon icon="truck" /><span><strong> FREE NO HURRY SHIPPING $35+</strong></span>
+    </Row>
+    <Row>
+      <Button text='Add to cart' />
+    </Row>
+    <Row>
+      IN STOCK Comonent
+    </Row>
+    <Row>
+      <Col size={1}>
+        <FontAwesomeIcon icon="list-ul" color="rgb(219,1,1)" />
+        ADD TO WISHLIST
+      </Col>
+      <Col size={1}>
+        <FontAwesomeIcon icon="retweet" color="rgb(219,1,1)" />
+        SEE TRADE VALUE
+      </Col>
+    </Row>
   </Grid>
-);
+  );
+};
 
 
 Details.propTypes = {
@@ -108,6 +104,8 @@ Details.propTypes = {
   publisher: PropTypes.string.isRequired,
   EsrbSrc: PropTypes.string.isRequired,
   EsrbCat: PropTypes.string.isRequired,
+  priceNew: PropTypes.number.isRequired,
+  priceUsed: PropTypes.number.isRequired,
 };
 
 export default Details;

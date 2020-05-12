@@ -46,7 +46,19 @@ const getEsrb = (id, cb) => {
   });
 };
 
+// returns reviews data for a given productId
+const getReviews = (id, cb) => {
+  connection.query('SELECT * FROM reviews WHERE product_id=?', id, (err, results) => {
+    if (err) {
+      console.log(err);
+      return;
+    }
+    cb(null, results);
+  });
+};
+
 module.exports.findProduct = getProductInfoById;
 module.exports.getImages = getImagesById;
 module.exports.getEsrb = getEsrb;
+module.exports.getReviews = getReviews;
 module.exports.connection = connection;
