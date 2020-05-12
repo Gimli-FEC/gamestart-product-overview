@@ -6,7 +6,7 @@ const MainContainer = styled.div`
   width: 600px;
   height: 600px;
   background-image: url('${(props) => props.src}');
-  background-size: 200% 200%;
+  background-size: 150% 150%;
   background-repeat: no-repeat;
   :hover img {
     opacity: 0;

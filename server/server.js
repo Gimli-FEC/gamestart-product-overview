@@ -56,5 +56,21 @@ app.get('/images/:id', ({ params: { id } }, res) => {
   });
 });
 
+app.get('/reviews/:id', ({ params: { id } }, res) => {
+
+  if (Number(id) > 100) {
+    id = '100';
+  } else if (Number(id) < 1) {
+    id = '1';
+  }
+
+  db.getReviews(id, (err, results) => {
+    if (err) {
+      console.log(err);
+      return;
+    }
+    res.send(results[0]);
+  });
+});
 
 module.exports = app;

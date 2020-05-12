@@ -3,8 +3,15 @@ import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import 'normalize.css';
 import styled from 'styled-components';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faListUl, faMapMarkerAlt, faChevronDown, faRetweet, faTruck } from '@fortawesome/free-solid-svg-icons';
+
 import Details from './components/details.jsx';
 import ImageSelector from './components/imgSelector.jsx';
+
+
+library.add(faListUl, faMapMarkerAlt, faChevronDown, faRetweet, faTruck);
+
 
 const Grid = styled.div`
   width: 60%;
@@ -30,7 +37,6 @@ class App extends React.Component {
       title: null,
       publisher: null,
       contentRating: null,
-      userRating: null,
       priceNew: null,
       priceUsed: null,
       currentStockNew: null,
@@ -54,7 +60,6 @@ class App extends React.Component {
           title: data.info.title,
           publisher: data.info.publisher,
           contentRating: data.info.content_rating,
-          userRating: data.info.userRating,
           priceNew: data.info.priceNew,
           priceUsed: data.info.priceUsed,
           currentStockNew: data.info.currentStockNew,
@@ -72,7 +77,6 @@ class App extends React.Component {
       title,
       publisher,
       contentRating,
-      userRating,
       priceNew,
       priceUsed,
       currentStockNew,
@@ -88,7 +92,13 @@ class App extends React.Component {
             <ImageSelector />
           </Col>
           <Col size={1}>
-            <Details title={title} publisher={publisher} EsrbSrc={esrbImage} EsrbCat={esrbCategory} />
+            <Details
+              title={title}
+              publisher={publisher}
+              EsrbSrc={esrbImage}
+              EsrbCat={esrbCategory}
+              priceNew={priceNew}
+              priceUsed={priceUsed} />
           </Col>
         </Row>
       </Grid>

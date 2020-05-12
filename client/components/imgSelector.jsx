@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
 import $ from 'jquery';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import MainImage from './mainImage.jsx';
+
 
 const Thumbnail = styled.div`
   display: inline-block;
@@ -12,7 +13,7 @@ const Thumbnail = styled.div`
   background-image: url('${(props) => props.src}');
   background-size: contain;
   :hover {
-    box-shadow: inset 0px -3px red;
+    box-shadow: inset 0px -3px rgb(218, 41, 28);
   }
 `;
 
@@ -36,18 +37,8 @@ const ThumbnailEnd = styled.div`
   font-weight: bold;
   text-align: center;
   :hover {
-    color: red;
+    color: rgb(218, 41, 28);
   }
-`;
-
-const ActivePic = styled.div`
-  display: inline-block;
-  margin-bottom: 10px;
-  width: 66px;
-  height: 66px;
-  background-image: url('${(props) => props.src}');
-  background-size: contain;
-  box-shadow: inset 0px -3px red;
 `;
 
 class ImageSelector extends React.Component {
@@ -84,11 +75,14 @@ class ImageSelector extends React.Component {
           <Col size={.75}>
             {images.map((pic) => {
               if (pic.url === active) {
-                return <Thumbnail src={pic.url} onClick={() => this.changePic(pic.url)} key={pic.id} style={{ boxShadow: 'inset 0px -3px red' }} />;
+                return <Thumbnail src={pic.url} onClick={() => this.changePic(pic.url)} key={pic.id} style={{ boxShadow: 'inset 0px -3px rgb(218, 41, 28)' }} />;
               }
               return <Thumbnail src={pic.url} onClick={() => this.changePic(pic.url)} key={pic.id} />;
             })}
-            <ThumbnailEnd>SEE MORE<p />{String.fromCharCode(9660)}</ThumbnailEnd>
+            <ThumbnailEnd>
+              SEE MORE
+              <FontAwesomeIcon icon="chevron-down" color='rgb(218, 41, 28)'/>
+            </ThumbnailEnd>
           </Col>
           <Col size={5}>
             <MainImage url={active} />
@@ -98,9 +92,5 @@ class ImageSelector extends React.Component {
     );
   }
 }
-
-ImageSelector.propTypes = {
-  id: PropTypes.number.isRequired,
-};
 
 export default ImageSelector;
