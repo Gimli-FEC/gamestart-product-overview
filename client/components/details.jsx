@@ -48,7 +48,7 @@ const StockDetails = styled.div`
 
 
 const Details = ({ title, publisher, EsrbSrc, EsrbCat, priceNew, priceUsed }) => {
-
+  // add state to track gameversion selection (potential refactor after proxy setup)
   return (
   <Grid>
     <Row>
