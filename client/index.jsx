@@ -107,4 +107,4 @@ class App extends React.Component {
 }
 
 // eslint-disable-next-line no-undef
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('overview'));

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import $ from 'jquery';
-// import modal here
+import Tooltip from './ratingsTooltip.jsx';
 
 const Container = styled.div`
   display: inline;
@@ -74,19 +74,29 @@ class Ratings extends React.Component {
   // }
 
   render() {
-    const { rating, totalReviews } = this.state;
+    const { rating, totalReviews, stars1, stars2, stars3, stars4, stars5 } = this.state;
     const percent = (rating / 5) * 100;
+
+    const message = `
+      Rating: ${rating} out of 5\n
+      (based on ${totalReviews} reviews)\n
+      5⭑: ${Math.round((stars5 / totalReviews) * 100)}% \n
+      4⭑: ${Math.round((stars4 / totalReviews) * 100)}% \n
+      3⭑: ${Math.round((stars3 / totalReviews) * 100)}% \n
+      2⭑: ${Math.round((stars2 / totalReviews) * 100)}% \n
+      1⭑: ${Math.round((stars1 / totalReviews) * 100)}%
+    `;
 
     return (
       <Row>
         <Col size={1}>
           <Container>
-            <TopStars percent={percent}>⭑⭑⭑⭑⭑</TopStars>
-            <BottomStars>⭑⭑⭑⭑⭑</BottomStars>
+            <Tooltip message={message}>
+              <TopStars percent={percent}>⭑⭑⭑⭑⭑</TopStars>
+              <BottomStars>⭑⭑⭑⭑⭑</BottomStars>
+            </Tooltip>
           </Container>
         </Col>
-        {/* <Col size={1}>{rating}</Col>
-        <Col size={1}>{totalReviews}</Col> */}
       </Row>
     );
   }
