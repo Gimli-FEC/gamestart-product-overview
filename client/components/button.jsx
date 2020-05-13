@@ -18,7 +18,7 @@ const AddToCart = styled.button`
 `;
 
 const Button = ({ text }) => (
-  <AddToCart>{text}</AddToCart>
+  <AddToCart onClick={() => {}}>{text}</AddToCart>
 );
 
 export default Button;

@@ -1,29 +1,66 @@
 module.exports = {
-  get: () => {
+  get: (url) => {
+    if (url.includes('images')) {
+      return Promise.resolve({
+        data: [
+          {
+            id: 1,
+            url: 'https://hrr45-fec.s3.us-east-2.amazonaws.com/photos/product/500.jpeg',
+          },
+          {
+            id: 2,
+            url: 'https://hrr45-fec.s3.us-east-2.amazonaws.com/photos/product/499.jpeg',
+          },
+          {
+            id: 3,
+            url: 'https://hrr45-fec.s3.us-east-2.amazonaws.com/photos/product/498.jpeg',
+          },
+          {
+            id: 4,
+            url: 'https://hrr45-fec.s3.us-east-2.amazonaws.com/photos/product/497.jpeg',
+          },
+          {
+            id: 5,
+            url: 'https://hrr45-fec.s3.us-east-2.amazonaws.com/photos/product/496.jpeg',
+          },
+        ],
+      });
+    } else if (url.includes('reviews')) {
+      return Promise.resolve({
+        data:
+          {
+            id: 1,
+            product_id: 1,
+            overallRating: 3,
+            totalReviews: 1871,
+            stars1: 419,
+            stars2: 323,
+            stars3: 375,
+            stars4: 265,
+            stars5: 489
+          }
+      });
+    } else {
     return Promise.resolve({
-      data: [
+      data:
         {
-          id: 496,
-          url: "https://hrr45-fec.s3.us-east-2.amazonaws.com/photos/product/5.jpeg"
+          info: {
+            id: 1,
+            title: 'Practical Wooden Pants',
+            publisher: 'Schuppe, Klocko and Kirlin',
+            content_rating: 6,
+            priceNew: 79.79,
+            priceUsed: 39.31,
+            currentStockNew: 3,
+            currentStockUsed: 2,
+          },
+          esrb: {
+            name: 'adults-only',
+            url: 'https://hrr45-fec.s3.us-east-2.amazonaws.com/photos/esrb/6.png',
+          },
         },
-        {
-          id: 497,
-          url: "https://hrr45-fec.s3.us-east-2.amazonaws.com/photos/product/4.jpeg"
-        },
-        {
-          id: 498,
-          url: "https://hrr45-fec.s3.us-east-2.amazonaws.com/photos/product/3.jpeg"
-        },
-        {
-          id: 499,
-          url: "https://hrr45-fec.s3.us-east-2.amazonaws.com/photos/product/2.jpeg"
-        },
-        {
-          id: 500,
-          url: "https://hrr45-fec.s3.us-east-2.amazonaws.com/photos/product/1.jpeg"
-        },
-      ],
     });
+    }
   },
 };
 

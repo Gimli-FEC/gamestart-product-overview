@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1`] = `
+<DocumentFragment>
+  <span
+    class="ratingsTooltip__Popup-sc-1d6glbo-0 irRflo"
+  >
+    <span
+      class="ratingsTooltip__Trigger-sc-1d6glbo-1 bevQCd"
+      data-testid="tt"
+    />
+  </span>
+</DocumentFragment>
+`;

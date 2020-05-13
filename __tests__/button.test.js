@@ -7,6 +7,6 @@ import Button from '../client/components/button.jsx';
 afterEach(cleanup);
 
 test('renders', () => {
-  const { asFragment } = render(<Button />);
+  const { asFragment } = render(<Button text={'Add to cart'} />);
   expect(asFragment()).toMatchSnapshot();
 });

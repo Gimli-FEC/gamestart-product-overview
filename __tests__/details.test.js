@@ -4,25 +4,22 @@ import '@testing-library/jest-dom';
 
 import Details from '../client/components/details.jsx';
 
-
-let propsObj = {
+const propsObj = {
   info: {
     id: 1,
-    title: "Incredible Steel Car",
-    publisher: "Feest - Schiller",
-    content_rating: 7,
-    userRating: 2.5,
-    priceNew: 68.85,
-    priceUsed: 31.05,
+    title: 'Practical Wooden Pants',
+    publisher: 'Schuppe, Klocko and Kirlin',
+    content_rating: 6,
+    priceNew: 79.79,
+    priceUsed: 39.31,
     currentStockNew: 3,
-    currentStockUsed: 0,
+    currentStockUsed: 2,
   },
   esrb: {
-    name: "rating-pending",
-    url: "https://hrr45-fec.s3.us-east-2.amazonaws.com/photos/esrb/7.png"
+    name: 'adults-only',
+    url: 'https://hrr45-fec.s3.us-east-2.amazonaws.com/photos/esrb/6.png',
   },
 };
-
 
 afterEach(cleanup);
 
@@ -31,6 +28,8 @@ test('renders', () => {
     title={propsObj.info.title}
     publisher={propsObj.info.publisher}
     EsrbSrc={propsObj.esrb.url}
-    EsrbCat={propsObj.esrb.name} />);
+    EsrbCat={propsObj.esrb.name}
+    priceNew={propsObj.info.priceNew}
+    priceUsed={propsObj.info.priceUsed} />);
   expect(asFragment()).toMatchSnapshot();
 });
