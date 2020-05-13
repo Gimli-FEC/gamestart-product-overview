@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders 1`] = `
+exports[`renders the component properly 1`] = `
 <DocumentFragment>
   <div
     class="ratings__Row-sc-8kadw3-3 iEETze"
@@ -17,6 +17,7 @@ exports[`renders 1`] = `
         >
           <span
             class="ratingsTooltip__Trigger-sc-1d6glbo-1 bevQCd"
+            data-testid="tt"
           >
             <div
               class="ratings__TopStars-sc-8kadw3-1 dEntyF"

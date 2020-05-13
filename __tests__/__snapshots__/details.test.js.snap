@@ -60,6 +60,7 @@ exports[`renders 1`] = `
             >
               <span
                 class="ratingsTooltip__Trigger-sc-1d6glbo-1 bevQCd"
+                data-testid="tt"
               >
                 <div
                   class="ratings__TopStars-sc-8kadw3-1 dEntyF"

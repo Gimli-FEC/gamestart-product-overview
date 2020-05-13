@@ -69,10 +69,6 @@ class Ratings extends React.Component {
       .fail((err) => console.log(err));
   }
 
-  // handleMouseOver() {
-  //   // load modal
-  // }
-
   render() {
     const { rating, totalReviews, stars1, stars2, stars3, stars4, stars5 } = this.state;
     const percent = (rating / 5) * 100;

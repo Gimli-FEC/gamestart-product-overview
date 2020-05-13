@@ -53,7 +53,7 @@ const Tooltip = ({message, children}) => {
   return (
     <Popup onMouseLeave={hideTip}>
       {isDisplayed && (<Container><Msg>{text.map((line) => <p>{line}</p>)}</Msg></Container>)}
-      <Trigger onMouseOver={showTip}>
+      <Trigger onMouseOver={showTip} data-testid="tt">
         { children }
       </Trigger>
     </Popup>
