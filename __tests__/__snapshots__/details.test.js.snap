@@ -3,31 +3,31 @@
 exports[`renders 1`] = `
 <DocumentFragment>
   <div
-    class="details__Grid-sc-2uoopj-3 eEaZsN"
+    class="details__Grid-sc-2uoopj-3 laHZWJ"
   >
     <div
-      class="details__Row-sc-2uoopj-4 bHVeVR"
+      class="details__Row-sc-2uoopj-4 ecJMdW"
     >
       <div
         class="details__Col-sc-2uoopj-5 hihrbV"
         size="3"
       >
         <div
-          class="details__Row-sc-2uoopj-4 bHVeVR"
+          class="details__Row-sc-2uoopj-4 ecJMdW"
         >
           <h1
             class="details__Title-sc-2uoopj-0 hLIyKG"
           >
-            Incredible Steel Car
+            Practical Wooden Pants
           </h1>
         </div>
         <div
-          class="details__Row-sc-2uoopj-4 bHVeVR"
+          class="details__Row-sc-2uoopj-4 ecJMdW"
         >
           <span
-            class="details__Publisher-sc-2uoopj-1 dAMCfq"
+            class="details__Publisher-sc-2uoopj-1 jXFZJi"
           >
-            Feest - Schiller
+            Schuppe, Klocko and Kirlin
           </span>
         </div>
       </div>
@@ -36,83 +36,148 @@ exports[`renders 1`] = `
         size="1"
       >
         <img
-          alt="rating-pending"
+          alt="adults-only"
           class="details__EsrbPic-sc-2uoopj-2 hUcYWy"
-          src="https://hrr45-fec.s3.us-east-2.amazonaws.com/photos/esrb/7.png"
+          src="https://hrr45-fec.s3.us-east-2.amazonaws.com/photos/esrb/6.png"
         />
       </div>
     </div>
     <div
-      class="details__Row-sc-2uoopj-4 bHVeVR"
+      class="details__Row-sc-2uoopj-4 ecJMdW"
+    >
+      <div
+        class="ratings__Row-sc-8kadw3-3 iEETze"
+      >
+        <div
+          class="ratings__Col-sc-8kadw3-4 cwiHmS"
+          size="1"
+        >
+          <div
+            class="ratings__Container-sc-8kadw3-0 cbQoLz"
+          >
+            <span
+              class="ratingsTooltip__Popup-sc-1d6glbo-0 irRflo"
+            >
+              <span
+                class="ratingsTooltip__Trigger-sc-1d6glbo-1 bevQCd"
+              >
+                <div
+                  class="ratings__TopStars-sc-8kadw3-1 dEntyF"
+                >
+                  ⭑⭑⭑⭑⭑
+                </div>
+                <div
+                  class="ratings__BottomStars-sc-8kadw3-2 iBSdYZ"
+                >
+                  ⭑⭑⭑⭑⭑
+                </div>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="details__Row-sc-2uoopj-4 ecJMdW"
+    >
+      <div
+        class="version__RadioContainer-c6dro4-4 hvzLpD"
+      >
+        <div
+          class="version__LabelContainer-c6dro4-3 bvmExG"
+        >
+          <div
+            class="version__Icon-c6dro4-2 ftBzxF"
+          />
+          <label
+            class="version__Label-c6dro4-0 kKxBiA"
+          >
+            <strong>
+              new
+            </strong>
+            <br />
+            <div
+              class="version__ValueDiv-c6dro4-1 kVroOq"
+            >
+              $79.79
+            </div>
+            <input
+              name="version"
+              type="radio"
+              value="79.79"
+            />
+          </label>
+        </div>
+        <div
+          class="version__LabelContainer-c6dro4-3 bvmExG"
+        >
+          <div
+            class="version__Icon-c6dro4-2 ftBzxF"
+          />
+          <label
+            class="version__Label-c6dro4-0 kKxBiA"
+          >
+            <strong>
+              pre-owned
+            </strong>
+            <br />
+            <div
+              class="version__ValueDiv-c6dro4-1 kVroOq"
+            >
+              $39.31
+            </div>
+            <input
+              name="version"
+              type="radio"
+              value="39.31"
+            />
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      class="details__Row-sc-2uoopj-4 ecJMdW"
+    >
+      Available at a store near you!
+    </div>
+    <div
+      class="details__Row-sc-2uoopj-4 ecJMdW"
+    >
+      <span>
+        <strong>
+           FREE NO HURRY SHIPPING $35+
+        </strong>
+      </span>
+    </div>
+    <div
+      class="details__Row-sc-2uoopj-4 ecJMdW"
+    >
+      <button
+        class="button__AddToCart-sc-1vptnfg-0 dVUQAg"
+      >
+        Add to cart
+      </button>
+    </div>
+    <div
+      class="details__Row-sc-2uoopj-4 ecJMdW"
+    >
+      IN STOCK Component Coming Soon
+    </div>
+    <div
+      class="details__Row-sc-2uoopj-4 ecJMdW"
     >
       <div
         class="details__Col-sc-2uoopj-5 cKwRRf"
         size="1"
       >
-        ☆☆☆☆☆
+        ADD TO WISHLIST
       </div>
       <div
         class="details__Col-sc-2uoopj-5 cKwRRf"
         size="1"
       >
-        Rating
+        SEE TRADE VALUE
       </div>
-      <div
-        class="details__Col-sc-2uoopj-5 cKwRRf"
-        size="1"
-      >
-        NumofReviews
-      </div>
-      <div
-        class="details__Col-sc-2uoopj-5 fvMKmI"
-        size="2"
-      />
-    </div>
-    <div
-      class="details__Row-sc-2uoopj-4 bHVeVR"
-    >
-      New Vs Pre-owned Selection Component
-    </div>
-    <div
-      class="details__Row-sc-2uoopj-4 bHVeVR"
-    >
-      PickupComponent
-    </div>
-    <div
-      class="details__Row-sc-2uoopj-4 bHVeVR"
-    >
-      ShippingComponent
-    </div>
-    <div
-      class="details__Row-sc-2uoopj-4 bHVeVR"
-    >
-      <div
-        class="details__Col-sc-2uoopj-5 hihrbV"
-        size="3"
-      >
-        ProtectionPlanSelect
-      </div>
-      <div
-        class="details__Col-sc-2uoopj-5 cKwRRf"
-        size="1"
-      >
-        Plan Details (link)
-      </div>
-    </div>
-    <div
-      class="details__Row-sc-2uoopj-4 bHVeVR"
-    >
-      Add To Cart (Button) Component
-    </div>
-    <div
-      class="details__Row-sc-2uoopj-4 bHVeVR"
-    >
-      IN STOCK Comonent
-    </div>
-    <div
-      class="details__Row-sc-2uoopj-4 bHVeVR"
-    >
-      Add to wishlist + TradeIn Component
     </div>
   </div>
 </DocumentFragment>

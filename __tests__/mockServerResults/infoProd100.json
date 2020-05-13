@@ -1,17 +1,16 @@
 {
   "info": {
     "id": 100,
-    "title": "Generic Fresh Towels",
-    "publisher": "Gutkowski - Ortiz",
-    "content_rating": 4,
-    "userRating": 3.7,
-    "priceNew": 89.68,
-    "priceUsed": 23.04,
-    "currentStockNew": 2,
-    "currentStockUsed": 2
+    "title": "Gorgeous Plastic Car",
+    "publisher": "Mayer, Stanton and Smitham",
+    "content_rating": 3,
+    "priceNew": 56.89,
+    "priceUsed": 35.32,
+    "currentStockNew": 0,
+    "currentStockUsed": 0
   },
   "esrb": {
-    "name": "teen",
-    "url": "https://hrr45-fec.s3.us-east-2.amazonaws.com/photos/esrb/4.png"
+    "name": "everyone10+",
+    "url": "https://hrr45-fec.s3.us-east-2.amazonaws.com/photos/esrb/3.png"
   }
 }

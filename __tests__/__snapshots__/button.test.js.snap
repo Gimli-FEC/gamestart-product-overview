@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1`] = `
+<DocumentFragment>
+  <button
+    class="button__AddToCart-sc-1vptnfg-0 dVUQAg"
+  >
+    Add to cart
+  </button>
+</DocumentFragment>
+`;

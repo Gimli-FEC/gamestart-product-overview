@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1`] = `
+<DocumentFragment>
+  <div
+    class="ratings__Row-sc-8kadw3-3 iEETze"
+  >
+    <div
+      class="ratings__Col-sc-8kadw3-4 cwiHmS"
+      size="1"
+    >
+      <div
+        class="ratings__Container-sc-8kadw3-0 cbQoLz"
+      >
+        <span
+          class="ratingsTooltip__Popup-sc-1d6glbo-0 irRflo"
+        >
+          <span
+            class="ratingsTooltip__Trigger-sc-1d6glbo-1 bevQCd"
+          >
+            <div
+              class="ratings__TopStars-sc-8kadw3-1 dEntyF"
+            >
+              ⭑⭑⭑⭑⭑
+            </div>
+            <div
+              class="ratings__BottomStars-sc-8kadw3-2 iBSdYZ"
+            >
+              ⭑⭑⭑⭑⭑
+            </div>
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

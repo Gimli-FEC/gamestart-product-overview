@@ -12,11 +12,9 @@ exports[`renders 1`] = `
         class="imgSelector__Col-yx4597-3 fvCZmB"
       >
         <div
-          class="imgSelector__ThumbnailEnd-yx4597-4 jZXDFV"
+          class="imgSelector__ThumbnailEnd-yx4597-4 kYDCNU"
         >
           SEE MORE
-          <p />
-          ▼
         </div>
       </div>
       <div
@@ -24,7 +22,7 @@ exports[`renders 1`] = `
         size="5"
       >
         <div
-          class="mainImage__MainContainer-zvt6z9-0 fysJAT"
+          class="mainImage__MainContainer-zvt6z9-0 kaSyTb"
           style="background-position: 0% 0%;"
         >
           <img

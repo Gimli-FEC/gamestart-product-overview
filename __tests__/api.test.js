@@ -12,6 +12,11 @@ const Info1 = require('./mockServerResults/infoProd1.json');
 
 const Images1 = require('./mockServerResults/imagesProd1.json');
 
+const reviews1 = require('./mockServerResults/reviews1.json');
+
+const reviews100 = require('./mockServerResults/reviews100.json');
+
+
 afterAll(() => {
   db.connection.end();
 });
@@ -98,6 +103,45 @@ describe('/images/:id endpoint', () => {
       .get('/images/105')
       .then(response => {
         expect(response.body).toMatchObject(Images100);
+        done();
+      });
+  });
+});
+
+describe('/reviews/:id endpoint', () => {
+
+  test('should respond with json object for product id 1', done => {
+    return request(app)
+      .get('/reviews/1')
+      .then(response => {
+        expect(response.body).toMatchObject(reviews1);
+        done();
+      });
+  });
+
+  test('should respond with json object for product id 100', done => {
+    return request(app)
+      .get('/reviews/100')
+      .then(response => {
+        expect(response.body).toMatchObject(reviews100);
+        done();
+      });
+  });
+
+  test('should respond with json object of product 1 if a product id < 1 is requested', done => {
+    return request(app)
+      .get('/reviews/0')
+      .then(response => {
+        expect(response.body).toMatchObject(reviews1);
+        done();
+      });
+  });
+
+  test('should respond with json object of product 100 if a product id > 100 is requested', done => {
+    return request(app)
+      .get('/reviews/105')
+      .then(response => {
+        expect(response.body).toMatchObject(reviews100);
         done();
       });
   });
