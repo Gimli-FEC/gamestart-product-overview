@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import $ from 'jquery';
 import Tooltip from './ratingsTooltip.jsx';
+import url from './apiUrl.js';
 
 const Container = styled.div`
   display: inline;
@@ -54,7 +55,7 @@ class Ratings extends React.Component {
     const params = (new URL(window.location)).searchParams;
     // eslint-disable-next-line radix
     const id = parseInt(params.get('id'), 10);
-    $.get(`/reviews/${id}`)
+    $.get(`${url}/reviews/${id}`)
       .done((data) => {
         this.setState({
           rating: data.overallRating,

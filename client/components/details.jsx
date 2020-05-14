@@ -35,6 +35,7 @@ const Row = styled.div`
   display: flex;
   margin-botton: 15px;
   padding-bottom: 10px;
+  max-width: 400px;
 `;
 
 const Col = styled.div`
@@ -45,7 +46,6 @@ const Col = styled.div`
 const StockDetails = styled.div`
   color: rgb(50, 157, 115);
 `;
-
 
 const Details = ({ title, publisher, EsrbSrc, EsrbCat, priceNew, priceUsed }) => {
 
