@@ -37,6 +37,7 @@ const ThumbnailEnd = styled.div`
   font-size: .7rem;
   font-weight: bold;
   text-align: center;
+  font-family: sans-serif;
   :hover {
     color: rgb(218, 41, 28);
   }

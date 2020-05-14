@@ -46,6 +46,9 @@ const StockDetails = styled.div`
   color: rgb(50, 157, 115);
 `;
 
+const Hr = styled.hr`
+  border: 1px solid rgb(242, 244, 247);
+`;
 
 const Details = ({ title, publisher, EsrbSrc, EsrbCat, priceNew, priceUsed }) => {
 
@@ -83,6 +86,7 @@ const Details = ({ title, publisher, EsrbSrc, EsrbCat, priceNew, priceUsed }) =>
       <Row>
         IN STOCK Component Coming Soon
       </Row>
+      <Hr />
       <Row>
         <Col size={1}>
           <FontAwesomeIcon icon="list-ul" color="rgb(219,1,1)" />

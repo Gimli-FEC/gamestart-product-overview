@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import 'normalize.css';
-import styled from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faListUl, faMapMarkerAlt, faChevronDown, faRetweet, faTruck } from '@fortawesome/free-solid-svg-icons';
 
@@ -13,7 +13,14 @@ import url from './components/apiUrl.js';
 
 library.add(faListUl, faMapMarkerAlt, faChevronDown, faRetweet, faTruck);
 
-console.log(url);
+const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css?family=Montserrat');
+  body {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+`;
 
 const Grid = styled.div`
   width: 60%;
@@ -29,6 +36,8 @@ const Col = styled.div`
   flex: ${(props) => props.size};
   margin-right: 10px;
 `;
+
+
 
 
 class App extends React.Component {
