@@ -18,5 +18,5 @@ test('renders the component properly', () => {
 test('loads tooltip when hovering over rating stars', () => {
   const result = render(<Ratings />);
   fireEvent.focus(result.getByTestId('tt'));
-  expect(result.getByTestId('tt')).toBeInTheDocument();
+  expect(result.getByTestId('ttcontainer')).toBeInTheDocument();
 });
