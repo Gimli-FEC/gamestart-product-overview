@@ -8,10 +8,12 @@ import { faListUl, faMapMarkerAlt, faChevronDown, faRetweet, faTruck } from '@fo
 
 import Details from './components/details.jsx';
 import ImageSelector from './components/imgSelector.jsx';
+import url from './components/apiUrl.js';
 
 
 library.add(faListUl, faMapMarkerAlt, faChevronDown, faRetweet, faTruck);
 
+console.log(url);
 
 const Grid = styled.div`
   width: 60%;
@@ -52,7 +54,7 @@ class App extends React.Component {
     // eslint-disable-next-line radix
     const id = parseInt(params.get('id'), 10);
 
-    $.get(`/${id}`)
+    $.get(`${url}/${id}`)
       .done((data) => {
         console.log(data);
         this.setState({
@@ -107,4 +109,4 @@ class App extends React.Component {
 }
 
 // eslint-disable-next-line no-undef
-ReactDOM.render(<App />, document.getElementById('overview'));
+ReactDOM.render(<App />, document.getElementById('Overview'));

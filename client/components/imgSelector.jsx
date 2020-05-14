@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import $ from 'jquery';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import MainImage from './mainImage.jsx';
+import url from './apiUrl.js';
 
 
 const Thumbnail = styled.div`
@@ -55,7 +56,7 @@ class ImageSelector extends React.Component {
     const params = (new URL(window.location)).searchParams;
     // eslint-disable-next-line radix
     const id = parseInt(params.get('id'), 10);
-    $.get(`/images/${id}`)
+    $.get(`${url}/images/${id}`)
       .done((data) => {
         this.setState({ active: data[0].url, images: data });
       })

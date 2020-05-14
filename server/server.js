@@ -2,6 +2,8 @@ const express = require('express');
 
 const bodyParser = require('body-parser');
 
+const cors = require('cors');
+
 const db = require('../db/index.js');
 
 const app = express();
@@ -11,6 +13,7 @@ app.use(bodyParser.json());
 
 app.use(express.static('public'));
 
+app.use(cors());
 
 app.get('/:id', ({ params: { id } }, res) => {
 
