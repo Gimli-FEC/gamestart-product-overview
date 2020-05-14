@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 
 app.use(express.static('public'));
 
-app.use(cors());
+app.use(cors({ origin: 'http://127.0.0.1:3000' }));
 
 app.get('/:id', ({ params: { id } }, res) => {
 
