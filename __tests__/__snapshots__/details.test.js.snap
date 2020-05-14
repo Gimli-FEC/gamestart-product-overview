@@ -6,14 +6,14 @@ exports[`renders 1`] = `
     class="details__Grid-sc-2uoopj-3 laHZWJ"
   >
     <div
-      class="details__Row-sc-2uoopj-4 ecJMdW"
+      class="details__Row-sc-2uoopj-4 yNWQM"
     >
       <div
         class="details__Col-sc-2uoopj-5 hihrbV"
         size="3"
       >
         <div
-          class="details__Row-sc-2uoopj-4 ecJMdW"
+          class="details__Row-sc-2uoopj-4 yNWQM"
         >
           <h1
             class="details__Title-sc-2uoopj-0 hLIyKG"
@@ -22,7 +22,7 @@ exports[`renders 1`] = `
           </h1>
         </div>
         <div
-          class="details__Row-sc-2uoopj-4 ecJMdW"
+          class="details__Row-sc-2uoopj-4 yNWQM"
         >
           <span
             class="details__Publisher-sc-2uoopj-1 jXFZJi"
@@ -43,7 +43,7 @@ exports[`renders 1`] = `
       </div>
     </div>
     <div
-      class="details__Row-sc-2uoopj-4 ecJMdW"
+      class="details__Row-sc-2uoopj-4 yNWQM"
     >
       <div
         class="ratings__Row-sc-8kadw3-3 iEETze"
@@ -57,6 +57,7 @@ exports[`renders 1`] = `
           >
             <span
               class="ratingsTooltip__Popup-sc-1d6glbo-0 irRflo"
+              data-testid="ttcontainer"
             >
               <span
                 class="ratingsTooltip__Trigger-sc-1d6glbo-1 bevQCd"
@@ -79,7 +80,7 @@ exports[`renders 1`] = `
       </div>
     </div>
     <div
-      class="details__Row-sc-2uoopj-4 ecJMdW"
+      class="details__Row-sc-2uoopj-4 yNWQM"
     >
       <div
         class="version__RadioContainer-c6dro4-4 hvzLpD"
@@ -137,12 +138,12 @@ exports[`renders 1`] = `
       </div>
     </div>
     <div
-      class="details__Row-sc-2uoopj-4 ecJMdW"
+      class="details__Row-sc-2uoopj-4 yNWQM"
     >
       Available at a store near you!
     </div>
     <div
-      class="details__Row-sc-2uoopj-4 ecJMdW"
+      class="details__Row-sc-2uoopj-4 yNWQM"
     >
       <span>
         <strong>
@@ -151,7 +152,7 @@ exports[`renders 1`] = `
       </span>
     </div>
     <div
-      class="details__Row-sc-2uoopj-4 ecJMdW"
+      class="details__Row-sc-2uoopj-4 yNWQM"
     >
       <button
         class="button__AddToCart-sc-1vptnfg-0 dVUQAg"
@@ -160,12 +161,12 @@ exports[`renders 1`] = `
       </button>
     </div>
     <div
-      class="details__Row-sc-2uoopj-4 ecJMdW"
+      class="details__Row-sc-2uoopj-4 yNWQM"
     >
       IN STOCK Component Coming Soon
     </div>
     <div
-      class="details__Row-sc-2uoopj-4 ecJMdW"
+      class="details__Row-sc-2uoopj-4 yNWQM"
     >
       <div
         class="details__Col-sc-2uoopj-5 cKwRRf"

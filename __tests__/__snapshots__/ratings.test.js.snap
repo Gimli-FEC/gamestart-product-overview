@@ -14,6 +14,7 @@ exports[`renders the component properly 1`] = `
       >
         <span
           class="ratingsTooltip__Popup-sc-1d6glbo-0 irRflo"
+          data-testid="ttcontainer"
         >
           <span
             class="ratingsTooltip__Trigger-sc-1d6glbo-1 bevQCd"

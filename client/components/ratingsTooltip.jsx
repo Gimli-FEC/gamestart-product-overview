@@ -51,7 +51,7 @@ const Tooltip = ({message, children}) => {
   let text = message.split('\n');
 
   return (
-    <Popup onMouseLeave={hideTip}>
+    <Popup onMouseLeave={hideTip} data-testid="ttcontainer">
       {isDisplayed && (<Container><Msg>{text.map((line) => <p>{line}</p>)}</Msg></Container>)}
       <Trigger onMouseOver={showTip} data-testid="tt">
         { children }
