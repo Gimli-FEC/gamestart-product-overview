@@ -14,7 +14,6 @@ import url from './components/apiUrl.js';
 library.add(faListUl, faMapMarkerAlt, faChevronDown, faRetweet, faTruck);
 
 const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Montserrat');
   body {
     font-family: Montserrat, sans-serif;
     font-weight: 400;
