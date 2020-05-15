@@ -14,7 +14,6 @@ import url from './components/apiUrl.js';
 library.add(faListUl, faMapMarkerAlt, faChevronDown, faRetweet, faTruck);
 
 const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Montserrat');
   body {
     font-family: Montserrat, sans-serif;
     font-weight: 400;
@@ -30,6 +29,7 @@ const Grid = styled.div`
 const Row = styled.div`
   display: flex;
   padding-top: 20px;
+  justify-content: space-around;
 `;
 
 const Col = styled.div`
