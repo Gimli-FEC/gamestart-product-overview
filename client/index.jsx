@@ -30,6 +30,7 @@ const Grid = styled.div`
 const Row = styled.div`
   display: flex;
   padding-top: 20px;
+  justify-content: space-around;
 `;
 
 const Col = styled.div`
