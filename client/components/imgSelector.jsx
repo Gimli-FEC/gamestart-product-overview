@@ -57,7 +57,7 @@ class ImageSelector extends React.Component {
     const params = (new URL(window.location)).searchParams;
     // eslint-disable-next-line radix
     const id = parseInt(params.get('id'), 10);
-    $.get(`${url}/images/${id}`)
+    $.get(`/overview/images/${id || 1}`)
       .done((data) => {
         this.setState({ active: data[0].url, images: data });
       })
