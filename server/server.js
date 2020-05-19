@@ -2,7 +2,7 @@ const express = require('express');
 
 const bodyParser = require('body-parser');
 
-const cors = require('cors');
+const expressStaticGzip = require('express-static-gzip');
 
 const db = require('../db/index.js');
 
@@ -11,11 +11,14 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use(express.static('public'));
+//app.use(express.static('public'));
 
-app.use(cors({ origin: ['http://localhost:3000','http://localhost:3001'] }));
+app.use('/', expressStaticGzip('public', {
+  enableBrotli: true,
+  orderPreference: ['br','gzip']
+}));
 
-app.get('/:id', ({ params: { id } }, res) => {
+app.get('/overview/:id', ({ params: { id } }, res) => {
 
   if (Number(id) > 100) {
     id = '100';
@@ -42,7 +45,7 @@ app.get('/:id', ({ params: { id } }, res) => {
   });
 });
 
-app.get('/images/:id', ({ params: { id } }, res) => {
+app.get('/overview/images/:id', ({ params: { id } }, res) => {
 
   if (Number(id) > 100) {
     id = '100';
@@ -59,7 +62,7 @@ app.get('/images/:id', ({ params: { id } }, res) => {
   });
 });
 
-app.get('/reviews/:id', ({ params: { id } }, res) => {
+app.get('/overview/reviews/:id', ({ params: { id } }, res) => {
 
   if (Number(id) > 100) {
     id = '100';

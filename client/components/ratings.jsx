@@ -55,7 +55,7 @@ class Ratings extends React.Component {
     const params = (new URL(window.location)).searchParams;
     // eslint-disable-next-line radix
     const id = parseInt(params.get('id'), 10);
-    $.get(`${url}/reviews/${id}`)
+    $.get(`/overview/reviews/${id || 1}`)
       .done((data) => {
         this.setState({
           rating: data.overallRating,

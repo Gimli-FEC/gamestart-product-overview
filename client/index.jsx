@@ -63,7 +63,7 @@ class App extends React.Component {
     // eslint-disable-next-line radix
     const id = parseInt(params.get('id'), 10);
 
-    $.get(`${url}/${id}`)
+    $.get(`/overview/${id || 1}`)
       .done((data) => {
         console.log(data);
         this.setState({

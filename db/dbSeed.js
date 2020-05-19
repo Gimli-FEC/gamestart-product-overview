@@ -123,7 +123,8 @@ product photos base url: https://hrr45-fec.s3.us-east-2.amazonaws.com/photos/pro
 
 const setUpImagesTable = () => {
   const urls = [];
-  const baseUrl = 'https://hrr45-fec.s3.us-east-2.amazonaws.com/photos/product/';
+  //const baseUrl = 'https://hrr45-fec.s3.us-east-2.amazonaws.com/photos/product/';
+  const baseUrl = 'http://d1i5z9gkmthkca.cloudfront.net/photos/product/';
   for (let i = 1; i <= 500; i += 1) {
     urls.push(`${baseUrl + i}.jpeg`);
   }
@@ -156,7 +157,8 @@ setUpESRBRatingsTable: clears the esrbRatings table and restarts auto_increment 
 
 const setUpESRBRatingsTable = () => {
   const urls = [];
-  const baseUrl = 'https://hrr45-fec.s3.us-east-2.amazonaws.com/photos/esrb/';
+  //const baseUrl = 'https://hrr45-fec.s3.us-east-2.amazonaws.com/photos/esrb/';
+  const baseUrl = 'http://d1i5z9gkmthkca.cloudfront.net/photos/esrb/';
   for (let i = 1; i <= 7; i += 1) {
     urls.push(`${baseUrl + i}.png`);
   }
