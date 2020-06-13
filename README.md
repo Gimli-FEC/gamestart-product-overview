@@ -6,7 +6,7 @@ This project uses React + Styled Components + Express to deliver video game info
 
   - [gamestart-reviews](https://github.com/Gimli-FEC/gamestart-reviews)
   - [Jasper-service](https://github.com/Gimli-FEC/Jasper-service)
-  - [Proxy Server](https://github.com/Gimli-FEC/proxy)
+  - [Proxy](https://github.com/Gimli-FEC/tim-proxy)
 
 ## System Requirements
 
