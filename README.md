@@ -1,35 +1,29 @@
-# Module 1: The product/order overview service for GameStart
+# Product overview service for GameStart app
 
-> This service contains the fullstack code for the image viewer component and the overview/order component of the GameStart app.
+This project uses React + Styled Components + Express to deliver video game information to 
 
 ## Related Projects
 
-  - https://github.com/Gimli-FEC/gamestart-reviews
-  - https://github.com/Gimli-FEC/Jasper-service
-  - https://github.com/Gimli-FEC/proxy
+  - [gamestart-reviews](https://github.com/Gimli-FEC/gamestart-reviews)
+  - [Jasper-service](https://github.com/Gimli-FEC/Jasper-service)
+  - [Proxy Server](https://github.com/Gimli-FEC/proxy)
 
-## Table of Contents
+## System Requirements
 
-1. [Usage](#Usage)
-1. [Requirements](#requirements)
-1. [Development](#development)
+1. Node
+2. MySQL
 
-## Usage
+## Getting Started
 
-> This repo only contains the front & back end for the components specified above.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-## Requirements
 
-An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
+### Installing
 
-- Node > 6.13.0
-- Webpack + Babel
-- React / React-Dom > 16
-- MySQL
-
-## Development
-
-### Installing Dependencies
+```sh
+git clone https://github.com/Gimli-FEC/gamestart-product-overview/
+cd gamestart-product-overview
+```
 
 Basic project setup from within the root directory:
 
@@ -37,6 +31,9 @@ Basic project setup from within the root directory:
 npm install
 mysql -u root < db/dbSchema.sql
 npm run seed
+npm run test
+npm run production
+npm run server-dev
 ```
 
 To start the development node server:
