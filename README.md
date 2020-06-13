@@ -1,4 +1,4 @@
-# Product overview service for GameStart app
+# GameStart: Product Overview Service
 
 This project uses React + Styled Components + Express to deliver video game information to 
 
