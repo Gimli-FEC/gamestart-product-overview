@@ -13,8 +13,8 @@ This project uses React + Styled Components + Express to deliver product informa
 
 ## System Requirements
 
-1. Node
-2. MySQL
+1. Node (12.16.1)
+2. MySQL (5.7)
 
 ## Getting Started
 
