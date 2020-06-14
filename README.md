@@ -1,6 +1,9 @@
 # GameStart: Product Overview Service
 
-This project uses React + Styled Components + Express to deliver video game information to 
+This project uses React + Styled Components + Express to deliver product information to customers.  This service is a custom react photo carousel component with zoom and movement control on the main image.  The ratings stars component implements a custom tooltip on mouseover.  New and Pre-Owned selections are customized radio buttons.
+
+<img width="1310" alt="image" src="https://user-images.githubusercontent.com/2312703/84603332-7c9d9c80-ae42-11ea-8702-594300c770cb.png">
+
 
 ## Related Projects
 
