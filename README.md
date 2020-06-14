@@ -29,7 +29,7 @@ git clone https://github.com/Gimli-FEC/gamestart-product-overview/
 cd gamestart-product-overview
 ```
 
-Basic project setup from within the root directory:
+Start the mysql server on your computer, then execute the following commands in the terminal.
 
 ```sh
 npm install
@@ -39,6 +39,9 @@ npm run test
 npm run production
 npm run server-dev
 ```
+In a browser window, navigate to localhost:3000/?id=NUM
+
+and replace NUM with a number from 1 to 100.
 
 To start the development node server:
 ```sh
